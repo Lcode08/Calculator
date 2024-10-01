@@ -63,10 +63,15 @@ button{
 }
 
 
+
 /* Media Queries for Mobile Devices */
 @media (max-width: 600px) {
+    .calculator {
+        padding: 15px; /* Reduce padding for mobile */
+    }
+
     input {
-        width: 90%; /* Make input width responsive */
+        width: 100%; /* Make input full width on mobile */
         font-size: 30px; /* Smaller font size for mobile */
         padding: 16px; /* Adjust padding */
     }
@@ -74,15 +79,17 @@ button{
     button {
         width: 50px; /* Smaller button size */
         height: 50px; /* Smaller button size */
-        font-size: 16px; /* Smaller font size for buttons */
+        font-size: 18px; /* Smaller font size for buttons */
     }
 
-    .calculator {
-        padding: 15px; /* Adjust padding for calculator */
+    /* Flex properties for buttons to stack better on mobile */
+    .calculator div {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping of buttons */
+        justify-content: center; /* Center buttons */
     }
 
-    h1 { /* Assuming there's an h1 element for the title */
-        margin-top: 1.5rem; /* Add margin for mobile */
-        font-size: 24px; /* Adjust title size for mobile */
+    .calculator div button {
+        margin: 5px; /* Reduce margin between buttons */
     }
 }

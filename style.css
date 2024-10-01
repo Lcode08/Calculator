@@ -62,3 +62,27 @@ button{
     color: #6dee0a; 
 }
 
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    input {
+        width: 90%; /* Make input width responsive */
+        font-size: 30px; /* Smaller font size for mobile */
+        padding: 16px; /* Adjust padding */
+    }
+
+    button {
+        width: 50px; /* Smaller button size */
+        height: 50px; /* Smaller button size */
+        font-size: 16px; /* Smaller font size for buttons */
+    }
+
+    .calculator {
+        padding: 15px; /* Adjust padding for calculator */
+    }
+
+    h1 { /* Assuming there's an h1 element for the title */
+        margin-top: 1.5rem; /* Add margin for mobile */
+        font-size: 24px; /* Adjust title size for mobile */
+    }
+}
